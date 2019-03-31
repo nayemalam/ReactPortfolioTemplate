@@ -1,50 +1,48 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {Header, Layout, Navigation, Drawer, Content} from 'react-mdl';
+import {Layout, Navigation, Drawer, Content} from 'react-mdl';
+// import styled from 'styled-components';
+import Wrapper from './components/styled/Wrapper'
+// import PageContent from './components/styled/PageContent'
+import Router from './components/router'
+import logo from './assets/images/na-logo.png';
+import {Link} from 'react-router-dom';
 
 class App extends Component {
+  
   render() {
+    
     return (
-      <div style={{height: '300px', position: 'relative'}}>
-      <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
-        <Header transparent title="Title" style={{color: 'white'}}>
+      // {/* No header, and the drawer stays open on larger screens (fixed drawer). */}
+      <Wrapper>
+      <Layout fixedDrawer>
+        <Drawer style={{paddingTop: '50px'}} title="">
+        
+          <img src={logo} width="200" height="200" style={{margin: '0 auto'}}/>
             <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-            </Navigation>
-        </Header>
-        <Drawer title="Title">
-            <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <Link to="/">HOME</Link>
+                <Link to="/about">ABOUT</Link>
+                <Link to="/portfolio">PORTFOLIO</Link>
+                <Link to="/media">MEDIA</Link>
+                <Link to="/speaking">SPEAKING</Link> 
+                <Link to="/contact">SAY HI!</Link>
             </Navigation>
         </Drawer>
-        <Content />
+        <Content>
+          {/* Router is the Main Page it points to */}
+          <Router/>
+          {/* <div> 
+            <h1> Hello</h1>
+            <h2 style={{textAlign: 'right'}}> My Name is Nayem Alam</h2>
+          
+          </div> */}
+
+        </Content>
       </Layout>
-      </div>
-      // <div className="App">
-      //   <header className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <p>
-      //       Edit <code>src/App.js</code> and save to reload NAYEM.
-      //     </p>
-      //     <a
-      //       className="App-link"
-      //       href="https://reactjs.org"
-      //       target="_blank"
-      //       rel="noopener noreferrer"
-      //     >
-      //       Learn React
-      //     </a>
-      //   </header>
-      // </div>
+      </Wrapper>
     );
   }
 }
 
 export default App;
+
