@@ -18,14 +18,14 @@ class App extends Component {
       <Layout fixedDrawer>
         <Drawer style={{paddingTop: '50px'}} title="">
         
-          <img src={logo} width="200" height="200" style={{margin: '0 auto'}}/>
+          <img src={logo} width="200" height="200" alt="logo" style={{margin: '0 auto'}}/>
             <Navigation>
                 <Link to="/">HOME</Link>
                 <Link to="/about">ABOUT</Link>
                 <Link to="/portfolio">PORTFOLIO</Link>
                 <Link to="/media">MEDIA</Link>
                 <Link to="/speaking">SPEAKING</Link> 
-                <Link to="/contact">SAY HI!</Link>
+                <Link to="/contact" id="hello">SAY HI!</Link>
             </Navigation>
         </Drawer>
         <Content>
