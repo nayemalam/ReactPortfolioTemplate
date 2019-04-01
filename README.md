@@ -1,4 +1,4 @@
-# React Based Portfolio Template
+# React Based Portfolio Template :dizzy:
 
 ## This is a starter template for anyone who wants to build their own portfolio website and play with React.
 
