@@ -4,6 +4,25 @@
 
 ![Screen Shot 2019-04-01 at 12 41 32 AM copy](https://user-images.githubusercontent.com/25883629/55304056-91496c80-5417-11e9-9e8d-c488be7a008d.jpg)
 
+How to get this template? <br/>
+
+Note: Need npm installed globally 
+
+1. Clone the repo: 
+- Open up terminal/cmd and type in: 
+```
+git clone https://github.com/nayemalam/ReactPortfolioTemplate.git
+```
+
+2. Go to project: ```cd root```
+
+3. ```npm install```
+
+4. ```npm start```
+
+5. Start coding :fire:
+
+
 Made with: <br/>
 
 | HTML,CSS,JS | REACT | Styled-Components |
